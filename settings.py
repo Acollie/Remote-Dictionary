@@ -16,4 +16,4 @@ def get_size():
 
 def load_file_yaml():
     with open('config.yaml') as file:
-        return yaml.load(file,Loader=yaml.FullLoader)
+        return yaml.load(file, Loader=yaml.FullLoader)

@@ -1,9 +1,5 @@
-import yaml
-import uuid
-import datetime
 import calendar
 import time
-from datetime import datetime, timedelta, date
 
 
 def epoch_time():
@@ -18,9 +14,9 @@ def past_calc(time_check):
     else:
         return False
 
-def client_check(key,clients):
+
+def client_check(key, clients):
     if key in clients:
         if past_calc(clients[key]):
             return True
-
     return False
